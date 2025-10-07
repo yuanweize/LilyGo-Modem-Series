@@ -167,6 +167,14 @@
 
 * Modem Status light and network status led cannot be turned off
 
+### Voice call function
+
+![Speaker](./images/SPK.png)
+
+* Connect a microphone and speaker to use the voice call function.
+* Connect a 1W speaker to SPK+/SPK-
+* Connect a condenser microphone to MIC+/MIC-
+
 ### Resource
 
 * [GPS Antenna](../../../../datasheet/GPS%20Antenna%20Specifications.pdf)
