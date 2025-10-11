@@ -1,12 +1,12 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: [bug, triage]
+name: Question
+description: File a question issue template to ask a question about our products.
+title: "[Question]: "
+labels: [triage]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Please search for related questions before asking
 
   - type: dropdown
     id: category
@@ -31,18 +31,17 @@ body:
       multiple: true
       options:
         - Not Applicable
-        - T-A7670
-        - T-A7670 S3
-        - T-A7670G-With-GPS
-        - T-Call-A7670
-        - T-A7608
-        - T-A7608 S3
-        - T-SIM7670G S3
-        - T-PCIE-A7670
+        - T-A7670-ESP32
+        - T-A7670G-ESP32-With-GPS
+        - T-Call-A7670-ESP32
+        - T-A7608-ESP32
+        - T-A7608-ESP32S3
+        - T-SIM7670G-ESP32S3
+        - T-PCIE-A7670-ESP32
         - T-ETH-ELite-A7670
-        - T-SIM7000G
-        - T-SIM7070G
-        - T-SIM7600 Series
+        - T-SIM7000G-ESP32
+        - T-SIM7070G-ESP32
+        - T-SIM7600 Series-ESP32
 
     validations:
       required: true
@@ -60,7 +59,7 @@ body:
     id: version
     attributes:
       label: Firmware Version
-      description: The firmware version can be queried by sending AT+SIMCOMATI.
+      description: The firmware version can be queried by sending AT+SIMCOMATI. Please be sure to paste the complete AT+SIMCOMATI response information, removing the IMEI line. This is an important basis for determining your hardware version.
       render: Shell
     validations:
       required: true
