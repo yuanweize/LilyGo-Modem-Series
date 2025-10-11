@@ -12,8 +12,9 @@
 #define QWIIC_SDA_PIN        (3)
 #define QWIIC_SCL_PIN        (2)
 
-#define QWIIC_UART_PIN       (43)
-#define QWIIC_UART_PIN       (44)
+// The default is the UART port, which is used to configure the second I2C port
+#define QWIIC_UART_TX_PIN       (43)
+#define QWIIC_UART_RX_PIN       (44)
 
 uint32_t deviceScan(TwoWire &_port)
 {
@@ -52,10 +53,13 @@ void setup()
     Serial.println("QWIIC I2C Scanner");
 
     // Change the Qwiic UART port to an I2C port
-    Wire.begin(QWIIC_UART_PIN, QWIIC_UART_PIN);
+    Wire.begin(QWIIC_UART_TX_PIN, QWIIC_UART_RX_PIN);
 
     // Initialize the Qwiic I2C port
     Wire1.begin(QWIIC_SDA_PIN, QWIIC_SCL_PIN);
+
+    Serial.println("Please note that the UART port does not have an I2C pull-up resistor and is configured for I2C function.");
+
 }
 
 void loop()
