@@ -173,7 +173,7 @@
 ### FAQ
 
 * **Upgrade modem firmware**
-  1. [T-A76XX Upgrade docs](../../../../docs/update_fw.md) / [Video](https://youtu.be/AZkm-Z7mKn8)
+  1. [T-A76XX Upgrade docs](../../../../docs/update_fw.md) / [Video](https://www.youtube.com/watch?v=fAtrz_4DfVs)
 
 * **Unable to detect SIMCard?**
    1. Need to insert the SIMCard into the board first and then power on to detect the SIM card. If the order is reversed, it will report that the SIMCard cannot be detected.
