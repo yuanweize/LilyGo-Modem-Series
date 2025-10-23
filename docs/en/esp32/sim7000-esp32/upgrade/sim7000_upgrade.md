@@ -25,7 +25,7 @@
 ## `2` Connect to the Modem USB port
 
 - The SIM7000G ESP32 version has a reserved USB solder point on the battery holder side for the modem. You need to connect a USB cable to this solder point, or directly solder a USB-A cable to it, as shown below.
-- The SIN7000G-S3-Standard version requires two USB-C ports.
+- The SIM7000G-S3-Standard version requires two USB-C ports.
 - Connect both the ESP32 USB-C port and the modem's USB port to your computer, using one port for power and the other for modem upgrades.
 
 ![USB](./images/16.png)
