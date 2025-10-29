@@ -25,7 +25,7 @@
 - 🔧 **[T-A7608X Quick Start](./docs/en/esp32/a7608-esp32/REAMDE.MD)**
 - 🔧 **[T-SIM7000G Quick Start](./docs/en/esp32/sim7000-esp32/REAMDE.MD)**
 - 🔧 **[T-SIM7070G Quick Start](./docs/en/esp32/sim7070-esp32/REAMDE.MD)**
-- 🔧 **[T-SIM7600 Quick Start](./docs/en/esp32/sim7600-esp32/REAMDE.MD)**
+- 🔧 **[T-SIM7600X Quick Start](./docs/en/esp32/sim7600-esp32/REAMDE.MD)**
 - 🔧 **[T-Call-A7670X Quick Start](./docs/en/esp32/t-call-a7670x/REAMDE.MD)**
 - 🔧 **[T-PCIE-Series Quick Start](./docs/en/esp32/pcie-series-esp32/REAMDE.MD)**
 
@@ -41,6 +41,14 @@
 - 🔧 **[T-SIM7000G-S3-Standard Quick Start](./docs/en/esp32s3/sim7000g-s3-standard/REAMDE.MD)**
 - 🔧 **[T-SIM7080G-S3-Standard Quick Start](./docs/en/esp32s3/sim7080-s3-standard/REAMDE.MD)**
 <!-- - 🔧 **[T-SIM7600X-S3-Standard Quick Start](./docs/en/esp32s3/)** -->
+
+## Modem firmware Upgrade Guide
+
+- 🔧 **[A7670/A7608 Upgrade Guide](./docs/update_fw.md)**
+- 🔧 **[SIM7670G Upgrade Guide](./docs/en/upgrade/sim7670g/sim7670g_upgrade.md)**
+- 🔧 **[SIM7000G Upgrade Guide](./docs/en/esp32/sim7000-esp32/upgrade/sim7000_upgrade.md)**
+- 🔧 **[SIM7080G Upgrade Guide](./docs/en/esp32s3/sim7080-s3-standard/upgrade/README.MD)**
+- 🔧 **[SIM7600X Upgrade Guide](./docs/en/esp32/sim7600-esp32/upgrade/sim7600_upgrade.md)**
 
 ## T-SimShield Usage Guide
 

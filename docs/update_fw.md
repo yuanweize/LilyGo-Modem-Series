@@ -1,5 +1,9 @@
 
-<h1 align = "center">🌟Modem Firmware Update Guide🌟</h1>
+<div align="center" markdown="1">
+  <img src="../.github/LilyGo_logo.png" alt="LilyGo logo" width="100"/>
+</div>
+
+<h1 align = "center">🌟LilyGo A7670/A7608 Upgrade Guide🌟</h1>
 
 # Prerequisites
 
@@ -72,11 +76,7 @@
 
 ### SIM7670G-MNGV
 
-<!-- * ~~[SIM7670G B02](https://drive.google.com/file/d/1-63xiw4TbGwHi3rQDzJpPKwp2SDNPXC1/view?usp=sharing) Known HTTP 715 Errors Don't use this version~~  -->
-* [SIM7670G-MNGV 2374B03](https://drive.google.com/file/d/1bBrze2eDtrjEuJ_2yiufSo87eIk_mYkE/view?usp=sharing) <!-- 20241008 Update Fixed  HTTP 715 error-->
-* [SIM7670G-MNGV 2374B04](https://drive.google.com/file/d/1-akwKQJttLbtLD48ApagusfBvS9ixZ4F/view?usp=sharing)
-* [SIM7670G-MNGV 2374B05](https://drive.google.com/file/d/10VvMNzgKhAX25lHSIGHnD3ip7kWjFl0g/view?usp=sharing)(Stablize) <!-- 20241206 Fixed MQTTS error https://github.com/Xinyuan-LilyGO/LilyGO-T-A76XX/issues/183 , HTTPS MQTTS FIXED -->
-* 🆕[SIM7670G-MNGV 2388B03](https://drive.google.com/file/d/1_Gwj3v_6NCtC-6xQ8dGSrjayTFRJyVgu/view?usp=sharing) (⚠ Latest, untested features)
+See [LilyGo SIM7670G Upgrade Guide](./en/upgrade/sim7670g/sim7670g_upgrade.md)
 
 ------------------------
 
@@ -99,15 +99,16 @@
 
 > \[!IMPORTANT]
 > Steps to enter upgrade mode
+>
 > 1. Press and hold the SBOOT button close to the Modelm and do not release it.
 > 2. Plug in MICRO-USB
 > 3. Plug in USB-C
 > 4. Check the device manager and wait for the computer port to be generated
 > 5. Release the SBOOT button after the port is identified
 
-### Record Video 
+### Record Video
 
-* [SIM7670G Upgrade Record](https://www.youtube.com/watch?v=fAtrz_4DfVs)
+* [SIM7670G Upgrade Record](https://youtu.be/wTcMp0K8fXY)
 * [A7670XX Upgrade Record](https://youtu.be/AZkm-Z7mKn8)
 
 
