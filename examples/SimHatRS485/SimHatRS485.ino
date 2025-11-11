@@ -7,7 +7,9 @@
  * @note      A7670G + external L76K GPS module solution is not supported.
  *            SIM7600 MODEM DTR PIN ,GPIO conflict, cannot be used
  *            SIM7670G RESET PIN,GPIO conflict, cannot be used
- */
+ *            
+ *            A7670G/E/SA ESP32 Version modem reset resistor needs to be removed.  https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/issues/160#issuecomment-2409860411
+ */           
 #include "Arduino.h"
 #include "utilities.h"
 
@@ -33,7 +35,6 @@
     #define RS485_RX_PIN        40
     #define RS485_ENABLE_PIN    42
     #define RELAY_PIN           5
-
 #elif defined(LILYGO_T_SIM7670G_S3)
 
     #define CAN_RX_PIN          2
