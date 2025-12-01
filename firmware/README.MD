@@ -9,28 +9,28 @@
 
 | Product Name            | AT Debug Firmware                                               |
 | ----------------------- | --------------------------------------------------------------- |
-| [T-A7670X-ESP32][1]     | [firmware](./debug/esp32/T-A7670X_ATdebug_251014.bin)           |
-| [T-Call-A7670X-v1.0][2] | [firmware](./debug/esp32/T-Call-A7670X-V1-0_ATdebug_251014.bin) |
-| [T-Call-A7670X-v1.1][2] | [firmware](./debug/esp32/T-Call-A7670X-V1-1_ATdebug_251014.bin) |
-| [T-A7608][3]            | [firmware](./debug/esp32/T-A7670X_ATdebug_251014.bin)           |
-| [T-SIM7000G][11]        | [firmware](./debug/esp32/T-SIM7000G_ATdebug_251014.bin)         |
-| [T-SIM7070G][10]        | [firmware](./debug/esp32/T-SIM7070G_ATdebug_251014.bin)         |
-| [T-SIM7600G][9]         | [firmware](./debug/esp32/T-SIM7600X_ATdebug_251014.bin)         |
-| [T-PCI-E][8]            | [firmware](./debug/esp32/T-PCIE_ATdebug_251014.bin)             |
+| [T-A7670X-ESP32][1]     | [firmware](./debug/esp32/T-A7670X_ATdebug_251201.bin)           |
+| [T-Call-A7670X-v1.0][2] | [firmware](./debug/esp32/T-Call-A7670X-V1-0_ATdebug_251201.bin) |
+| [T-Call-A7670X-v1.1][2] | [firmware](./debug/esp32/T-Call-A7670X-V1-1_ATdebug_251201.bin) |
+| [T-A7608][3]            | [firmware](./debug/esp32/T-A7608X_ATdebug_251201.bin)           |
+| [T-SIM7000G][11]        | [firmware](./debug/esp32/T-SIM7000G_ATdebug_251201.bin)         |
+| [T-SIM7070G][10]        | [firmware](./debug/esp32/T-SIM7070G_ATdebug_251201.bin)         |
+| [T-SIM7600G][9]         | [firmware](./debug/esp32/T-SIM7600X_ATdebug_251201.bin)         |
+| [T-PCI-E][8]            | [firmware](./debug/esp32/T-PCIE_ATdebug_251201.bin)             |
 
 ## ESP32-S3 Version
 
 | Product Name        | AT Debug Firmware                                            |
 | ------------------- | ------------------------------------------------------------ |
-| [T-A7608-S3][4]     | [firmware](./debug/esp32s3/T-A7608X-S3_ATdebug_251014.bin)   |
-| [T-SIM7670G-S3][5]  | [firmware](./debug/esp32s3/T-SIM7670G-S3_ATdebug_251014.bin) |
-| [T-ETH-Elite-S3][7] | [firmware](./debug/esp32s3/T-ETH-ELITE_ATdebug_251014.bin)   |
+| [T-A7608-S3][4]     | [firmware](./debug/esp32s3/T-A7608X-S3_ATdebug_251201.bin)   |
+| [T-SIM7670G-S3][5]  | [firmware](./debug/esp32s3/T-SIM7670G_ATdebug_251201.bin) |
+| [T-ETH-Elite-S3][7] | [firmware](./debug/esp32s3/T-ETH-ELITE_ATdebug_251201.bin)   |
 
 ## Standard-Series
 
 | Product Name                       | AT Debug Firmware                                                     |
 | ---------------------------------- | --------------------------------------------------------------------- |
-| [StandardSeries_ATdebug_251014][6] | [firmware](./debug/standard-series/StandardSeries_ATdebug_251014.bin) |
+| [StandardSeries_ATdebug_251201][6] | [firmware](./debug/standard-series/StandardSeries_ATdebug_251201.bin) |
 
 * Standard Series pin compatible, no need to distinguish between different modemsStandard Series
 
