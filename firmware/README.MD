@@ -20,17 +20,18 @@
 
 ## ESP32-S3 Version
 
-| Product Name        | AT Debug Firmware                                            |
-| ------------------- | ------------------------------------------------------------ |
-| [T-A7608-S3][4]     | [firmware](./debug/esp32s3/T-A7608X-S3_ATdebug_251201.bin)   |
-| [T-SIM7670G-S3][5]  | [firmware](./debug/esp32s3/T-SIM7670G_ATdebug_251201.bin) |
-| [T-ETH-Elite-S3][7] | [firmware](./debug/esp32s3/T-ETH-ELITE_ATdebug_251201.bin)   |
+| Product Name        | AT Debug Firmware                                          |
+| ------------------- | ---------------------------------------------------------- |
+| [T-A7608-S3][4]     | [firmware](./debug/esp32s3/T-A7608X-S3_ATdebug_251201.bin) |
+| [T-SIM7670G-S3][5]  | [firmware](./debug/esp32s3/T-SIM7670G_ATdebug_251201.bin)  |
+| [T-ETH-Elite-S3][7] | [firmware](./debug/esp32s3/T-ETH-ELITE_ATdebug_251201.bin) |
 
 ## Standard-Series
 
-| Product Name                       | AT Debug Firmware                                                     |
-| ---------------------------------- | --------------------------------------------------------------------- |
-| [StandardSeries_ATdebug_251201][6] | [firmware](./debug/standard-series/StandardSeries_ATdebug_251201.bin) |
+| Product Name                            | AT Debug Firmware                                                                           |
+| --------------------------------------- | ------------------------------------------------------------------------------------------- |
+| [StandardSeries_ATdebug][6]             | [firmware](./debug/standard-series/StandardSeries_ATdebug_251201.bin)                       |
+| [StandardSeries_CameraWebServer_SoftAP] | [Camera firmware](./debug/standard-series/StandardSeries_CameraWebServer_SoftAP_251201.bin) |
 
 * Standard Series pin compatible, no need to distinguish between different modemsStandard Series
 
