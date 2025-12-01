@@ -89,7 +89,7 @@ DeviceInfo:
 
 OK
 
-Please make sure you are using the latest released version of the firmware. Find the latest version here: https://github.com/Xinyuan-LilyGO/LilyGO-T-A76XX/blob/main/docs/update_fw.md
+Please make sure you are using the latest released version of the firmware. Find the latest version here: https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series#modem-firmware-upgrade-guide
 If you still have problems with the latest firmware, please open an issue. Otherwise, please do not create meaningless issues.
 AT+HTTPTERM
 AT+HTTPTERM
