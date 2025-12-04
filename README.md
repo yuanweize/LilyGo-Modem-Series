@@ -10,7 +10,7 @@
 
 - 2025/09/19 : Added SIM7070G support, compatible with SIM7080G
 - 2025/08/07 : Completed support for SIM7080G series
-- 2025/07/26 : Add **T-SimShield** support, please refer to the [document](./docs/SimshieldUsageGuide/SimshieldUsageGuide.md) here for quick setup
+- 2025/07/26 : Add **T-SimShield** support, please refer to the [document](./docs/en/SimshieldUsageGuide/README.md) here for quick setup
 - 2025/07/10 : The example has completed most of the support for SIM7000G. For non-encrypted MQTT, please refer to the description above the example. Some of them are not supported.
 - 2025/07/09 : Completed support for SIM7600 series
 - The TinyGSM used in the example is a [fork](https://github.com/lewisxhe/TinyGSM) to support A7670,A7608,SIM7672G,SIM7670G, If you use the master branch, the compilation will not go smoothly
@@ -146,20 +146,36 @@
   </tr>
 </table>
 
-## T-SimShield Usage Guide
+## Sim Series Shield
 
 <table style="width: 100%; border-collapse: collapse; text-align: center; border: 0; border-spacing: 0; margin: 20px 0;">
   <tr style="border: 0;">
-    <!-- SimShield -->
-    <td style="padding: 10px 20px; width: 100%; border: 0; background: transparent;">
+    <!-- T-SimShield -->
+    <td style="padding: 10px 20px; width: 33.33%; border: 0; background: transparent;">
       <a href="./docs/en/SimshieldUsageGuide/README.md" style="text-decoration: none; display: block;">
-        <img src="./images/product/png/H783-SimShield.png" alt="SimShield" width="200" style="border: 0;"/>
+        <img src="./images/product/png/H783-SimShield.png" alt="T-A7670X-S3-Standard" width="200" style="border: 0;"/>
         <div style="color: #FFFF; font-weight: 600; margin-top: 8px;">SimShield Usage Guide</div>
+      </a>
+    </td>
+    <!-- T-SimHat Relay -->
+    <td style="padding: 10px 20px; width: 33.33%; border: 0; background: transparent;">
+      <a href="https://lilygo.cc/products/lilygo%C2%AE-t-simhat-can-rs485-relay-5v" style="text-decoration: none; display: block;">
+        <img src="./images/product/png/H607-T-SIM-Hat.png" alt="T-SIM7670G-S3-Standard" width="200" style="border: 0;"/>
+        <div style="color: #FFFF; font-weight: 600; margin-top: 8px;">T-SimHat Relay Quick Start</div>
+      </a>
+    </td>
+    <!-- T-SimHat Can/RS485 -->
+    <td style="padding: 10px 20px; width: 33.33%; border: 0; background: transparent;">
+      <a href="https://lilygo.cc/products/lilygo%C2%AE-t-simhat-can-rs485-relay-5v?variant=42200124752053" style="text-decoration: none; display: block;">
+        <img src="./images/product/png/H559-T-SIM-Can.png" alt="T-SimHat Can/RS485" width="200" style="border: 0;"/>
+        <div style="color: #FFFF; font-weight: 600; margin-top: 8px;">T-SimHat Can/RS485 Quick Start</div>
       </a>
     </td>
   </tr>
 </table>
+
 <!-- - 🔧 **[SimShield Usage Guide](./docs/en/SimshieldUsageGuide/README.md)** -->
+
 
 
 ## Modem firmware Upgrade Guide
