@@ -11,6 +11,10 @@
 #warning "SIM7600 has not been tested yet."
 #define TINY_GSM_RX_BUFFER          1024 // Set RX buffer to 1Kb
 
+#ifndef MODEM_DTR_PIN
+#error "This board does not support modem sleep function"
+#endif
+
 // See all AT commands, if wanted
 // #define DUMP_AT_COMMANDS
 

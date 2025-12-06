@@ -18,7 +18,6 @@
 // The model name with S3 after it is the ESP32-S3 version, otherwise it is the ESP32 version
 // 型号名称后面带S3的为ESP32-S3版本，否则是ESP32版本
 
-
 // Products Link:https://www.lilygo.cc/products/t-sim-a7670e
 // #define LILYGO_T_A7670
 
@@ -59,6 +58,11 @@
 
 // Products Link: https://lilygo.cc/products/t-eth-elite-1?variant=44498205049013
 // #define LILYGO_T_ETH_ELITE_A7670X
+// #define LILYGO_T_ETH_ELITE_SIM7000X
+// #define LILYGO_T_ETH_ELITE_SIM7080G
+// #define LILYGO_T_ETH_ELITE_SIM7600X
+// #define LILYGO_T_ETH_ELITE_SIM7670G
+
 
 // https://lilygo.cc/products/t-sim7600
 // #define LILYGO_SIM7600X
@@ -66,13 +70,19 @@
 // Products Link: ......
 // #define LILYGO_T_RELAY_S3_SIMSHIELD
 
+// https://lilygo.cc/products/t-internet-com
+// #define LILYGO_T_INTERNET_COM_A7670X
+// #define LILYGO_T_INTERNET_COM_SIM7000X
+// #define LILYGO_T_INTERNET_COM_SIM7080G
+// #define LILYGO_T_INTERNET_COM_SIM7600X
+// #define LILYGO_T_INTERNET_COM_SIM7670G
 
 // SIMCOM standard interface series
 // #define LILYGO_SIM7000G_S3_STAN
 // #define LILYGO_SIM7080G_S3_STAN
 // #define LILYGO_SIM7670G_S3_STAN
 // #define LILYGO_A7670X_S3_STAN
-
+// #define LILYGO_SIM7600X_S3_STAN
 
 
 #if defined(LILYGO_T_A7670)
@@ -644,8 +654,8 @@
     #define SDMMC_CLK                   (38)
     #define SDMMC_DATA                  (40)
 
-    #ifndef TINY_GSM_MODEM_SIM7080G
-        #define TINY_GSM_MODEM_SIM7080G
+    #ifndef TINY_GSM_MODEM_SIM7080
+        #define TINY_GSM_MODEM_SIM7080
     #endif
 
     //! The following pins are for SimShield and need to be used with SimShield
@@ -755,10 +765,137 @@
     #define MODEM_GPS_ENABLE_LEVEL              (0)
     #define PRODUCT_MODEL_NAME                  "LilyGo-T-ETH-Elite-A7670X"
 
+#elif defined(LILYGO_T_ETH_ELITE_SIM7000X)
+    #define LILYGO_T_ETH_ELITE
+
+    #ifndef TINY_GSM_MODEM_SIM7000SSL
+        #define TINY_GSM_MODEM_SIM7000SSL
+    #endif
+
+    #define MODEM_GPS_ENABLE_GPIO               (48)
+    #define MODEM_GPS_ENABLE_LEVEL              (1)
+    #define PRODUCT_MODEL_NAME                  "LilyGo-T-ETH-Elite-SIM7000G"
+
+#elif defined(LILYGO_T_ETH_ELITE_SIM7080G)
+
+    #define LILYGO_T_ETH_ELITE
+
+    #ifndef TINY_GSM_MODEM_SIM7080
+        #define TINY_GSM_MODEM_SIM7080
+    #endif
+
+    #define MODEM_GPS_ENABLE_GPIO               (5)
+    #define MODEM_GPS_ENABLE_LEVEL              (1)
+    #define PRODUCT_MODEL_NAME                  "LilyGo-T-ETH-Elite-SIM7080G"
+
+#elif defined(LILYGO_T_ETH_ELITE_SIM7600X)
+    #define LILYGO_T_ETH_ELITE
+
+    #ifndef TINY_GSM_MODEM_SIM7600
+        #define TINY_GSM_MODEM_SIM7600
+    #endif
+
+    #define MODEM_GPS_ENABLE_GPIO               (127)
+    #define MODEM_GPS_ENABLE_LEVEL              (1)
+    #define PRODUCT_MODEL_NAME                  "LilyGo-T-ETH-Elite-SIM7600X"
+
+#elif defined(LILYGO_T_ETH_ELITE_SIM7670G)
+    #define LILYGO_T_ETH_ELITE
+
+    #ifndef TINY_GSM_MODEM_SIM7670G
+        #define TINY_GSM_MODEM_SIM7670G
+    #endif
+
+    #define MODEM_GPS_ENABLE_GPIO               (4)
+    #define MODEM_GPS_ENABLE_LEVEL              (1)
+    #define PRODUCT_MODEL_NAME                  "LilyGo-T-ETH-Elite-SIM7670G"
+
+    
+#elif defined(LILYGO_T_INTERNET_COM_A7670X)
+
+    #define LILYGO_T_INTERNET_COM
+
+    #ifndef TINY_GSM_MODEM_A7670
+        #define TINY_GSM_MODEM_A7670
+    #endif
+
+
+    // Modem GPIO 4 control gps enable
+    #define MODEM_GPS_ENABLE_GPIO               (4)
+    #define MODEM_GPS_ENABLE_LEVEL              (0)
+    #define PRODUCT_MODEL_NAME                  "LilyGo-T-Internet-COM--A7670X"
+
+#elif defined(LILYGO_T_INTERNET_COM_SIM7000X)
+    #define LILYGO_T_INTERNET_COM
+
+    #ifndef TINY_GSM_MODEM_SIM7000SSL
+        #define TINY_GSM_MODEM_SIM7000SSL
+    #endif
+
+    #define MODEM_GPS_ENABLE_GPIO               (48)
+    #define MODEM_GPS_ENABLE_LEVEL              (1)
+    #define PRODUCT_MODEL_NAME                  "LilyGo-T-Internet-COM--SIM7000G"
+
+#elif defined(LILYGO_T_INTERNET_COM_SIM7080G)
+
+    #define LILYGO_T_INTERNET_COM
+
+    #ifndef TINY_GSM_MODEM_SIM7080
+        #define TINY_GSM_MODEM_SIM7080
+    #endif
+
+    #define MODEM_GPS_ENABLE_GPIO               (5)
+    #define MODEM_GPS_ENABLE_LEVEL              (1)
+    #define PRODUCT_MODEL_NAME                  "LilyGo-T-Internet-COM--SIM7080G"
+
+#elif defined(LILYGO_T_INTERNET_COM_SIM7600X)
+    #define LILYGO_T_INTERNET_COM
+
+    #ifndef TINY_GSM_MODEM_SIM7600
+        #define TINY_GSM_MODEM_SIM7600
+    #endif
+
+    #define MODEM_GPS_ENABLE_GPIO               (127)
+    #define MODEM_GPS_ENABLE_LEVEL              (1)
+    #define PRODUCT_MODEL_NAME                  "LilyGo-T-Internet-COM--SIM7600X"
+
+#elif defined(LILYGO_T_INTERNET_COM_SIM7670G)
+    #define LILYGO_T_INTERNET_COM
+
+    #ifndef TINY_GSM_MODEM_SIM7670G
+        #define TINY_GSM_MODEM_SIM7670G
+    #endif
+
+    #define MODEM_GPS_ENABLE_GPIO               (4)
+    #define MODEM_GPS_ENABLE_LEVEL              (1)
+    #define PRODUCT_MODEL_NAME                  "LilyGo-T-Internet-COM--SIM7670G"
+
+    
 #else
     #error "Use ArduinoIDE, please open the macro definition corresponding to the board above <utilities.h>"
 #endif
 
+
+#ifdef LILYGO_T_INTERNET_COM
+
+    #define MODEM_RX_PIN            (35)
+    #define MODEM_TX_PIN            (33)
+    #define MODEM_RESET_PIN         (32)
+    // The modem boot pin needs to follow the startup sequence.
+    #define BOARD_PWRKEY_PIN        (32)
+
+    // SD Socket pins
+    #define BOARD_MISO_PIN          (2)
+    #define BOARD_MOSI_PIN          (15)
+    #define BOARD_SCK_PIN           (14)
+    #define BOARD_SD_CS_PIN         (13)
+
+    #define SerialAT                Serial1
+
+    #define MODEM_RESET_LEVEL       HIGH
+
+
+#endif /*LILYGO_T_INTERNET_COM*/
 
 #ifdef LILYGO_T_PCIE
 
@@ -784,7 +921,7 @@
         #define MODEM_GPS_ENABLE_LEVEL              (-1)
     #endif
     
-#endif
+#endif /*LILYGO_T_PCIE*/
 
 #ifdef LILYGO_T_ETH_ELITE
 
@@ -830,7 +967,7 @@
         #define MODEM_GPS_ENABLE_LEVEL              (-1)
     #endif
     
-#endif
+#endif /*LILYGO_T_ETH_ELITE*/
 
 
 

@@ -13,6 +13,10 @@
 #include "utilities.h"
 #include <driver/gpio.h>
 
+#ifndef MODEM_DTR_PIN
+#error "This board does not support modem sleep function"
+#endif
+
 #define TINY_GSM_RX_BUFFER          1024 // Set RX buffer to 1Kb
 
 // See all AT commands, if wanted

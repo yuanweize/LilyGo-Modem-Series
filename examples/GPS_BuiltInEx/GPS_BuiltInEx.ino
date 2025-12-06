@@ -58,9 +58,12 @@ void setup()
     digitalWrite(MODEM_RESET_PIN, !MODEM_RESET_LEVEL);
 #endif
 
+#ifdef MODEM_DTR_PIN
     // Pull down DTR to ensure the modem is not in sleep state
+    Serial.printf("Set DTR pin %d LOW\n", MODEM_DTR_PIN);
     pinMode(MODEM_DTR_PIN, OUTPUT);
     digitalWrite(MODEM_DTR_PIN, LOW);
+#endif
 
     // Turn on modem
     pinMode(BOARD_PWRKEY_PIN, OUTPUT);
