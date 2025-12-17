@@ -113,7 +113,7 @@
 
 #### USB Modem mode
 
-<img src="./images/USB.png" alt="ESP programming mode" width="240" style="border: 0;"/>
+<img src="./images/USB.png" alt="USB Modem mode" width="240" style="border: 0;"/>
 
 * Switch P1~P2 to OFF, disconnect the modem's RX/TX to the ESP.
 * Switch P4 to ON to enable automatic startup upon power-on, eliminating the need for ESP to control the modem's power-on.
@@ -259,7 +259,13 @@
   1. If you need to make a voice call, you need to buy a SIM7600G with an audio decoder. You can check the red box in the figure below. If there is no chip here, there is no decoder version and the voice call function cannot be used.
   2. The figure below shows a version without a decoder. If there is a chip here, you can solder the microphone to the MIC+ and MIC- pads and the speaker to the SPK pad.
 
-    ![decoder](./images/decoder.jpg)
+    <img src="./images/decoder.jpg" alt="ESP programming mode" width="480" style="border: 0;"/>
+
+  * Compatible with condenser microphones and speakers, but not with digital microphones; only compatible with condenser microphones.
+
+  <img src="../../../../docs/static/microphone.png" alt="microphone" width="240" style="border: 0;"/>
+  <img src="../../../../docs/static/speaker.png" alt="spekaer" width="240" style="border: 0;"/>
+
 
 * Can other GPS antennas be used?
   1. The external GPS antenna must be an active GPS antenna with a 3.3V power supply. For example, the [MK-76](https://www.rfmw.com/datasheets/sanav/mk-76.pdf) supports 2.5-5.5V and is compatible. Most active GPS antennas support 2.5-5.5V power. Please refer to the GPS antenna datasheet for details.
