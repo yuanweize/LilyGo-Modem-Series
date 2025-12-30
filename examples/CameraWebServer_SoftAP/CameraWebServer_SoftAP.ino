@@ -54,7 +54,7 @@ bool setCameraPower(bool enable)
     started = true;
 
     uint8_t vdd[] = {
-        0x04,   /*reg address*/
+        0x03,   /*reg address*/
         0x7C,   /*REG03 DVDD1 1.496V*/
         0x7C,   /*REG04 DVDD2 1.496v*/
         0xCA,   /*REG05 AVDD1 3.0V*/
