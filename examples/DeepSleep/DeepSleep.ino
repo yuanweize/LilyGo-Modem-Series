@@ -29,6 +29,21 @@
 // Need to set the GPS to sleep mode, otherwise the sleep current will not drop.
 // #define USING_L76K_MODULE
 
+// A7670G(ESP32 Version) + L76K VERSION
+#if defined(CONFIG_IDF_TARGET_ESP32)
+/*
+* GPS communication pin. If the modem has GPS function,
+* NMEA data can be read through this IO.
+* If an external GPS module is used, the same GPIO is used for communication.
+* */
+#define MODEM_GPS_RX_PIN                    (22)
+#define MODEM_GPS_TX_PIN                    (21)
+#define MODEM_GPS_PPS_PIN                   (23)
+
+// This IO is only used when using an external GPS module, such as A7670G+L76K GPS
+#define GPS_SHIELD_WAKEUP_PIN               (19)
+#endif
+
 // See all AT commands, if wanted
 #define DUMP_AT_COMMANDS
 
