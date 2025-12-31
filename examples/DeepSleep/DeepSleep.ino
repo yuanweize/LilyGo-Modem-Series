@@ -30,7 +30,7 @@
 // #define USING_L76K_MODULE
 
 // A7670G(ESP32 Version) + L76K VERSION
-#if defined(CONFIG_IDF_TARGET_ESP32)
+#if defined(CONFIG_IDF_TARGET_ESP32) && defined(LILYGO_T_A7670)
 /*
 * GPS communication pin. If the modem has GPS function,
 * NMEA data can be read through this IO.
