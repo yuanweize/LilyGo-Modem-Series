@@ -43,7 +43,7 @@ String apn = NETWORK_APN;
 String apn = "";
 #endif
 
-const char *server_url =  "https://lewishe.pro";
+const char *server_url =  "https://lewishe.us";
 
 
 char *create_json_payload(const char* api_key, const char* data_str);

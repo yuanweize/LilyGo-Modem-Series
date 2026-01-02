@@ -20,23 +20,23 @@
 
 // The following download link is for testing only and can be replaced with  firmware download link for another server.
 #if  defined(LILYGO_T_A7670)
-const char *server_url =  "https://lewishe.pro/ota/firmware-a7670.bin";
+const char *server_url =  "https://lewishe.us/ota/firmware-a7670.bin";
 #elif defined(LILYGO_T_CALL_A7670_V1_0)
-const char *server_url =  "https://lewishe.pro/ota/firmware-tcall-a7670.bin";
+const char *server_url =  "https://lewishe.us/ota/firmware-tcall-a7670.bin";
 #elif defined(LILYGO_T_CALL_A7670_V1_1)
-const char *server_url =  "https://lewishe.pro/ota/firmware-tcall-a7670-v1-1.bin";
+const char *server_url =  "https://lewishe.us/ota/firmware-tcall-a7670-v1-1.bin";
 #elif defined(LILYGO_T_SIM7670G_S3)
-const char *server_url =  "https://lewishe.pro/ota/firmware-sim7672g.bin";
+const char *server_url =  "https://lewishe.us/ota/firmware-sim7672g.bin";
 #elif defined(LILYGO_T_A7608X)
-const char *server_url =  "https://lewishe.pro/ota/firmware-a7608.bin";
+const char *server_url =  "https://lewishe.us/ota/firmware-a7608.bin";
 #elif defined(LILYGO_T_A7608X_S3)
-const char *server_url =  "https://lewishe.pro/ota/firmware-a7608-s3.bin";
+const char *server_url =  "https://lewishe.us/ota/firmware-a7608-s3.bin";
 #elif defined(LILYGO_T_A7608X_DC_S3)
-const char *server_url =  "https://lewishe.pro/ota/firmware-a7608-s3-dc.bin";
+const char *server_url =  "https://lewishe.us/ota/firmware-a7608-s3-dc.bin";
 #elif defined(LILYGO_SIM7600X)
-const char *server_url =  "https://lewishe.pro/ota/firmware-sim7600x.bin";
+const char *server_url =  "https://lewishe.us/ota/firmware-sim7600x.bin";
 #elif defined(LILYGO_SIM7000G)
-const char *server_url =  "https://lewishe.pro/ota/firmware-sim7000g.bin";
+const char *server_url =  "https://lewishe.us/ota/firmware-sim7000g.bin";
 #else
 #error "Use ArduinoIDE, please open the macro definition corresponding to the board above <utilities.h>"
 #endif
