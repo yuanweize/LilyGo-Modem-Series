@@ -100,44 +100,55 @@
 
 ### 📍 Pins Map
 
-| Name              | GPIO NUM           | Free |
-| ----------------- | ------------------ | ---- |
-| Modem TX          | 4                  | ❌    |
-| Modem RX          | 5                  | ❌    |
-| Modem RING        | 6                  | ❌    |
-| Modem DTR         | 7                  | ❌    |
-| Modem PWRKEY      | 46                 | ❌    |
-| GPS RX            | 48                 | ❌    |
-| GPS TX            | 45                 | ❌    |
-| Modem RTS*        | 48                 | ❌    |
-| Modem CTS*        | 45                 | ❌    |
-| GPS PPS           | 17                 | ❌    |
-| GPS Shield Wakeup | 0                  | ❌    |
-| Battery ADC Pin   | 8                  | ❌    |
-| Solar ADC Pin     | 18                 | ❌    |
-| SD SCK            | 12                 | ❌    |
-| SD MISO           | 13                 | ❌    |
-| SD MOSI           | 11                 | ❌    |
-| SD CS             | 10                 | ❌    |
-| Power Save Mode   | 42                 | ❌    |
-| Camera XCLK       | 21                 | ❌    |
-| Camera SIOD       | 1                  | ❌    |
-| Camera SIOC       | 41                 | ❌    |
-| Camera VSYNC      | 9                  | ❌    |
-| Camera HREF       | 14                 | ❌    |
-| Camera PCLK       | 37                 | ❌    |
-| Camera Y9         | 40                 | ❌    |
-| Camera Y8         | 39                 | ❌    |
-| Camera Y7         | 38                 | ❌    |
-| Camera Y6         | 36                 | ❌    |
-| Camera Y5         | 16                 | ❌    |
-| Camera Y4         | 47                 | ❌    |
-| Camera Y3         | 15                 | ❌    |
-| Camera Y2         | 35                 | ❌    |
-| Camera RESET      | See the tips below | ❌    |
-| Camera PWD        | See the tips below | ❌    |
-| Default SDA       | 3                  | ✅️    |
-| Default SCL       | 2                  | ✅️    |
+| Name              | GPIO NUM             | Free |
+| ----------------- | -------------------- | ---- |
+| Modem TX          | 4                    | ❌    |
+| Modem RX          | 5                    | ❌    |
+| Modem RING        | 6                    | ❌    |
+| Modem DTR         | 7                    | ❌    |
+| Modem PWRKEY      | 46                   | ❌    |
+| GPS RX            | 48                   | ❌    |
+| GPS TX            | 45                   | ❌    |
+| Modem RTS*        | 48                   | ❌    |
+| Modem CTS*        | 45                   | ❌    |
+| GPS PPS           | 17                   | ❌    |
+| GPS Shield Wakeup | 0                    | ❌    |
+| Battery ADC Pin   | 8                    | ❌    |
+| Solar ADC Pin     | 18                   | ❌    |
+| SD SCK            | 12                   | ❌    |
+| SD MISO           | 13                   | ❌    |
+| SD MOSI           | 11                   | ❌    |
+| SD CS             | 10                   | ❌    |
+| Power Save Mode   | 42                   | ❌    |
+| Camera XCLK       | 21                   | ❌    |
+| Camera SIOD       | 1  (default pull-up) | ❌    |
+| Camera SIOC       | 41 (default pull-up) | ❌    |
+| Camera VSYNC      | 9                    | ❌    |
+| Camera HREF       | 14                   | ❌    |
+| Camera PCLK       | 37                   | ❌    |
+| Camera Y9         | 40                   | ❌    |
+| Camera Y8         | 39                   | ❌    |
+| Camera Y7         | 38                   | ❌    |
+| Camera Y6         | 36                   | ❌    |
+| Camera Y5         | 16                   | ❌    |
+| Camera Y4         | 47                   | ❌    |
+| Camera Y3         | 15                   | ❌    |
+| Camera Y2         | 35                   | ❌    |
+| Camera RESET      | See the tips below   | ❌    |
+| Camera PWD        | See the tips below   | ❌    |
+| Default SDA       | 3                    | ✅️    |
+| Default SCL       | 2                    | ✅️    |
+
+> \[!TIP]
+>
+> [ESP32-S3 Consolidated Pin Overview](https://documentation.espressif.com/esp32-s3_datasheet_en.pdf)
+>
+> Input/Output: Any GPIO not listed can be used as input/output.
+>
+> ADC Pins: Only pins 1-21 are allowed as ADC inputs.
+>
+> IO0/IO3/IO45/IO46 are Strapping Pins; their use is limited. Please see the **Strapping Pins** section of the [online documentation](https://documentation.espressif.com/esp32-s3_datasheet_en.pdf) for details.
+>
 
 | A7670G + L76K GPS Version Pin Maps   | GPIO |
 | ------------------------------------ | ---- |
