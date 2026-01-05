@@ -96,6 +96,17 @@
 | SD MOSI         | 14       | ❌    |
 | SD CS           | 13       | ❌    |
 
+> \[!TIP]
+>
+> [ESP32-S3 Consolidated Pin Overview](https://documentation.espressif.com/esp32-s3_datasheet_en.pdf)
+>
+> Input/Output: Any GPIO not listed can be used as input/output.
+>
+> ADC Pins: Only pins 1-21 are allowed as ADC inputs.
+>
+> IO0/IO3/IO45/IO46 are Strapping Pins; their use is limited. Please see the **Strapping Pins** section of the [online documentation](https://documentation.espressif.com/esp32-s3_datasheet_en.pdf) for details.
+>
+
 ### ⚡ Electrical parameters
 
 | Features                        | Details |
