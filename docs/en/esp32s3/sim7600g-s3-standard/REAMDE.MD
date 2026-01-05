@@ -99,7 +99,6 @@
 | GPS TX*           | 45                    | ❌    |
 | Modem RTS*        | 48                    | ❌    |
 | Modem CTS*        | 45                    | ❌    |
-| GPS PPS           | 17                    | ❌    |
 | GPS Shield Wakeup | 0                     | ❌    |
 | Battery ADC Pin   | 8                     | ❌    |
 | Solar ADC Pin     | 18                    | ❌    |
@@ -248,7 +247,6 @@ The power-on sequence is: power on all cameras -> power off all cameras -> delay
 | --------------- | -------------------------------- | ---------------------------------------------------------------------- |
 | MODEM STATE     | RED   (Near the modem)           | Startup:ON                                                             |
 | MODEM NET       | RED   (Near the modem)           | Network status indicator                                               |
-| GPS PPS LED     | RED  (Near the modem)            | Starting:ON,Startup completed:OFF,Position fix:Flashes once per second |
 | CHARGE LED      | RED  (Near the battery switch)   | Charging:ON  Charging complete:OFF                                     |
 | CHARGE DONE LED | GREEN  (Near the battery switch) | Charging:OFF  Charging complete:ON                                     |
 
