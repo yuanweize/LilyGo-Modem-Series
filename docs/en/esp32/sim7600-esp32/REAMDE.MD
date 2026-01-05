@@ -16,6 +16,14 @@
 
 [1]: https://lilygo.cc/products/t-SIM7600
 
+### Modem differences
+
+| Model         | GPS | Phone Call | SMS | Frequency band                                                                                                                                     |
+| ------------- | --- | ---------- | --- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SIM7600G-H R2 | ✅   | ✅          | ✅   | LTE-FDD:B1/B2/B3/B4/B5/B7/B8/B12/B13/B18/B19/B20/B25/B26/B28/B66 LTE-TDD:B34/B38/B39/B40/B41 WCDMA:B1/B2/B4/B5/B6/B8/B19  GSM:850/900/1800/1900MHz |
+
+* The voice call version requires the purchase of the version with an audio decoder; otherwise, voice calls are not possible.
+
 > \[!IMPORTANT]
 > How to check the specific model version of the modem? Sending AT+SIMCOMATI can return the firmware version and hardware version used.
 >
