@@ -16,6 +16,7 @@
 
 #include "utilities.h"
 #include <TinyGsmClient.h>
+#include "BigPayload.h"
 
 #ifdef DUMP_AT_COMMANDS  // if enabled it requires the streamDebugger lib
 #include <StreamDebugger.h>
@@ -225,7 +226,7 @@ void setup()
     modem.sendAT("+SIMCOMATI");
     modem.waitResponse(10000UL, res);
     Serial.println(res);
-    
+
     Serial.println("Please make sure you are using the latest released version of the firmware. Find the latest version here: https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series#modem-firmware-upgrade-guide");
     Serial.println("If you still have problems with the latest firmware, please open an issue. Otherwise, please do not create meaningless issues.");
 
@@ -262,6 +263,30 @@ void setup()
     String body = modem.https_body();
     Serial.print("HTTP body : ");
     Serial.println(body);
+
+
+#ifdef LILYGO_T_SIM7670G_S3
+    // 20260107: Added post big payload 3953 Bytes
+    // https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/issues/432
+    // Test On SIM7670G , Other models were not tested.
+    Serial.printf("Post payload size :%u Bytes\n", sizeof(BigPayload));
+    httpCode = modem.https_post(BigPayload);
+    if (httpCode != 200) {
+        Serial.print("HTTP post failed ! error code = ");
+        Serial.println(httpCode);
+        return;
+    }
+
+    // Get HTTPS header information
+    header = modem.https_header();
+    Serial.print("HTTP Header : ");
+    Serial.println(header);
+
+    // Get HTTPS response
+    body = modem.https_body();
+    Serial.print("HTTP body : ");
+    Serial.println(body);
+#endif
 
     // Disconnect http server
     modem.https_end();
