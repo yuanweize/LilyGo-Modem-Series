@@ -123,3 +123,20 @@ void loop()
 #ifndef TINY_GSM_FORK_LIBRARY
 #error "No correct definition detected, Please copy all the [lib directories](https://github.com/Xinyuan-LilyGO/LilyGO-T-A76XX/tree/main/lib) to the arduino libraries directory , See README"
 #endif
+
+
+/*
+
+----- 20260108 Failed Need upgrade to  A151B01A7670M6 Link : https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/blob/main/docs/update_fw.md#a7670sa-lasc-no-gps
+Manufacturer: INCORPORATED
+Model: A7670SA-LASC
+Revision: A011B04A7670M6_CD
+A7670M6_B04V01_230619
+QCN:
+IMEI: xxxxxxxxxxxxxx
+MEID:
++GCAP: +CGSM,+FCLASS,+DS
+DeviceInfo:
+
+
+*/

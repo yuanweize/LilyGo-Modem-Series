@@ -69,3 +69,21 @@ MEID:
 +GCAP: +CGSM,+FCLASS,+DS
 DeviceInfo:
 ```
+
+------------------------
+
+# A7670SA-LASC
+
+### Known version firmware bugs
+
+#### BUG: TTS Error
+
+Manufacturer: INCORPORATED
+Model: A7670SA-LASC
+Revision: A011B04A7670M6_CD
+A7670M6_B04V01_230619
+QCN:
+IMEI: xxxxxxxxxxxxxx
+MEID:
++GCAP: +CGSM,+FCLASS,+DS
+DeviceInfo:
