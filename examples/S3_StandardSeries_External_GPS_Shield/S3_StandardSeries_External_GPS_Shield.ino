@@ -24,7 +24,7 @@
 // See all AT commands, if wanted
 #define DUMP_AT_COMMANDS
 // Decode GPS stream, if not defined then output NMEA
-// #define DECODER_GPS_STREAM
+#define DECODER_GPS_STREAM
 
 
 #include <TinyGsmClient.h>
@@ -201,32 +201,6 @@ void setup()
 
     delay(2000);
 
-    String modemName = "UNKNOWN";
-    while (1) {
-        modemName = modem.getModemName();
-        if (modemName == "UNKNOWN") {
-            Serial.println("Unable to obtain module information normally, try again");
-            delay(1000);
-        } else if (modemName.startsWith("A7670E-FASE") || modemName.startsWith("A7670SA-FASE")) {
-            Serial.println("Modem support built-in GPS function, keep running");
-            break;
-        } else if (modemName.startsWith("A7670E-LNXY-UBL")
-                   || modemName.startsWith("A7670SA-LASE")
-                   || modemName.startsWith("A7670SA-LASC")
-                   ||  modemName.startsWith("A7670G-LLSE")
-                   ||  modemName.startsWith("A7670G-LABE")
-                   ||  modemName.startsWith("A7670E-LASE ")) {
-            while (1) {
-                Serial.println("The modem does not have built-in GPS function.");
-                delay(1000);
-            }
-        } else {
-            Serial.print("Model Name:");
-            Serial.println(modemName);
-            break;
-        }
-        delay(5000);
-    }
 
     Serial.println("Start the external GPS module and use the default 9600 baud rate for communication");
 
