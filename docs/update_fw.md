@@ -92,9 +92,10 @@ See [LilyGo SIM7670G Upgrade Guide](./en/upgrade/sim7670g/sim7670g_upgrade.md)
 
 ### A7608SA-H
 
-* [🆕A7608SA-H A81C4B01](https://drive.google.com/file/d/1lf7EFa7uaI9fyr25b4Ik2SW36P-22rWG/view?usp=sharing)
-* [A7608SA-H B11](https://drive.google.com/file/d/1ktLzCjnd0TXzbiythU1EaWVkAokXzkf9/view?usp=sharing)
-* [A7608SA-H A50C4B13](https://drive.google.com/file/d/1-LsgDug-Zz_0kU96HlCGtfks3ruvjcQb/view?usp=sharing)
+* [🆕A7608SA-H A81C4B02A7600M7_T_A7608SA-H_V102250213](https://drive.google.com/file/d/1eIXt-tPJz9cF25YVeCH47hbQj1X1p2GS/view?usp=sharing)
+* [A7608SA-H A81C4B01A7600M7_T_A7608SA-H_V102250213](https://drive.google.com/file/d/1lf7EFa7uaI9fyr25b4Ik2SW36P-22rWG/view?usp=sharing)
+* [A7608SA-H A50C4B11V01A7600M7_A7608SA-H_V102220719](https://drive.google.com/file/d/1ktLzCjnd0TXzbiythU1EaWVkAokXzkf9/view?usp=sharing)
+* [A7608SA-H A50C4B13A7600M7_A7608SA-H_V102240329](https://drive.google.com/file/d/1-LsgDug-Zz_0kU96HlCGtfks3ruvjcQb/view?usp=sharing)
 
 > \[!IMPORTANT]
 >
