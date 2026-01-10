@@ -66,6 +66,11 @@ void setup()
 #endif
 
     if (esp_sleep_get_wakeup_cause() == ESP_SLEEP_WAKEUP_TIMER) {
+
+#ifdef USING_L76K_MODULE
+        gpio_hold_dis((gpio_num_t) GPS_SHIELD_WAKEUP_PIN);
+#endif
+
         Serial.println("Wakeup timer");
         int i = 30;
         while (i > 0) {
