@@ -9,10 +9,10 @@
  *            SIM7000G - RI pin not connected to esp ,this examples can't run
  *            but it requires the operator base station to support SMS Over SGS service to send,
  *            otherwise it will be invalid
- * 
+ *
  *             When a "sleep" text message is received, the device will continue to sleep.
- *             When a "get gps" message is received, the device will wake up to obtain the location and send it to the 
- *             specified number. 
+ *             When a "get gps" message is received, the device will wake up to obtain the location and send it to the
+ *             specified number.
 * */
 
 
@@ -162,10 +162,10 @@ void setup()
 #endif
 
 #ifdef MODEM_DTR_PIN
-    // Pull down DTR to ensure the modem is not in sleep state
-    Serial.printf("Set DTR pin %d LOW\n", MODEM_DTR_PIN);
-    pinMode(MODEM_DTR_PIN, OUTPUT);
-    digitalWrite(MODEM_DTR_PIN, LOW);
+        // Pull down DTR to ensure the modem is not in sleep state
+        Serial.printf("Set DTR pin %d LOW\n", MODEM_DTR_PIN);
+        pinMode(MODEM_DTR_PIN, OUTPUT);
+        digitalWrite(MODEM_DTR_PIN, LOW);
 #endif
 
         // Turn on the modem
@@ -241,6 +241,7 @@ void setup()
                     Serial.println("Modem support built-in GPS function, keep running");
                     break;
                 } else if (modemName.startsWith("A7670E-LNXY-UBL")
+                           || modemName.startsWith("A7670E-LNMV")
                            || modemName.startsWith("A7670SA-LASE")
                            || modemName.startsWith("A7670SA-LASC")
                            ||  modemName.startsWith("A7670G-LLSE")

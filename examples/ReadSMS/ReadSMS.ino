@@ -5,7 +5,7 @@
  * @copyright Copyright (c) 2024  Shenzhen Xin Yuan Electronic Technology Co., Ltd
  * @date      2024-08-29
  * @note      SIM7670G does not support SMS and voice functions
- *            `A7670E-LNXY-UBL` this version does not support voice and SMS functions.
+ *            `A7670E-LNXY-UBL` and `A7670E-LNMV` this version does not support voice and SMS functions.
  * ! Only read data, not decode data. For detailed SMS operation, please refer to A76XX_Series_AT_Command_Manual
  *
  */

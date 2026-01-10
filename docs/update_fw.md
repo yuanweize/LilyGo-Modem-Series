@@ -23,6 +23,10 @@
 
 ## Firmware
 
+### A7670E-LNMV No GPS,No Voice,No SMS
+
+* [🆕 A7670E-LNMV 23156B02A7670M5A_A7670E-LNMV_V101240423](https://drive.google.com/file/d/1nDTdMgSrb2Ku2NUtOZaKzZO6MYJnj4l-/view?usp=sharing)
+
 ### A7670E-LNXY-UBL No GPS,No Voice,No SMS
 
 * [A7670E-LNXY-UBL 23124B03](https://drive.google.com/file/d/12i1YNPVsygzwKhNnboiGVRn_nG6QulQA/view?usp=sharing)
