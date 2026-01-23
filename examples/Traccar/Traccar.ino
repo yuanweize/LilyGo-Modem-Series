@@ -439,7 +439,7 @@ void setup()
 #if defined(TINY_GSM_MODEM_A7670) || defined(TINY_GSM_MODEM_A7608)
     modem.setGPSMode(GNSS_MODE_GPS_BDS_GALILEO_SBAS_QZSS);
 #elif defined(TINY_GSM_MODEM_SIM7670G)
-    modem.setGPSMode(GNSS_MODE_GPS_GLONASS_BDS);
+    modem.setGPSMode(GNSS_MODE_GPS_GLONASS_GALILEO_BDS);
 #elif defined(TINY_GSM_MODEM_SIM7600)
     modem.setGPSMode(GNSS_MODE_ALL);
 #elif defined(TINY_GSM_MODEM_SIM7000SSL) || defined(TINY_GSM_MODEM_SIM7000)
