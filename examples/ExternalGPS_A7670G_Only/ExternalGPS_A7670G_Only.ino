@@ -57,7 +57,7 @@ void setup()
     digitalWrite(BOARD_MODEM_PWR_PIN, LOW);
     delay(100);
     digitalWrite(BOARD_MODEM_PWR_PIN, HIGH);
-    delay(1000);
+    delay(100);
     digitalWrite(BOARD_MODEM_PWR_PIN, LOW);
 
     Serial.begin(115200);
@@ -81,7 +81,7 @@ void loop()
 {
     while (SerialGPS.available()) {
         int c = SerialGPS.read();
-        // Serial.write(c);     // Debug gps nmae message output to serial
+        // Serial.write(c);     // Debug gps nmea message output to serial
         if (gps.encode(c)) {
             displayInfo();
         }
