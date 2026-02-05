@@ -191,6 +191,17 @@
 
 * Modem Status light and network status led cannot be turned off
 
+### Audio interface
+
+* The audio interfaces are now highlighted in the image below; the speaker jack is on the left, and the microphone jack is on the right.
+
+  <img src="../../../../images/product/png/A7608X-SPEK.png" alt="microphone" width="480" style="border: 0;"/>
+
+* Compatible with condenser microphones and speakers, but not with digital microphones; only compatible with condenser microphones.
+
+  <img src="../../../../docs/static/microphone.png" alt="microphone" width="240" style="border: 0;"/>
+  <img src="../../../../docs/static/speaker.png" alt="spekaer" width="240" style="border: 0;"/>
+
 ### Resource
 
 * [GPS Antenna](../../../../datasheet/GPS%20Antenna%20Specifications.pdf)
